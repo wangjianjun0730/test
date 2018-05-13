@@ -1,0 +1,7 @@
+window.$$ = {
+  Native: {
+    request: function () {
+
+    }
+  }
+};

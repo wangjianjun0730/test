@@ -1,0 +1,78 @@
+.transition-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .transition-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-enter {
+    transform: translateX(100%);
+  }
+
+  .left-enter.left-enter-active {
+    animation: left-slide-in 0.25s linear;
+  }
+
+  .left-leave {
+    transform: translateX(0%);
+  }
+
+  .left-leave.left-leave-active {
+    animation: left-slide-out 0.25s linear;
+  }
+
+  .right-enter {
+    transform: translateX(-100%);
+  }
+
+  .right-enter.right-enter-active {
+    animation: right-slide-in 0.25s linear;
+  }
+
+  .right-leave {
+    transform: translateX(0%);
+  }
+
+  .right-leave.right-leave-active {
+    animation: right-slide-out 0.25s linear;
+  }
+}
+
+@keyframes left-slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes left-slide-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes right-slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes right-slide-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
