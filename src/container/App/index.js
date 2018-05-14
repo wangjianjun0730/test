@@ -5,7 +5,9 @@ import {someRestFulApi} from '../../utils/api';
 import appAction from './action';
 import logo from '../../logo.svg';
 import { Table } from 'rsuite';
-import 'rsuite/styles/less/index.less'
+// import 'rsuite/styles/less/index.less'
+import 'rsuite/dist/styles/rsuite.min.css'
+
 import './style.less';
 import mockData from './mock'
 const { Column, HeaderCell, Cell, Pagination } = Table;
